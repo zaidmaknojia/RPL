@@ -20,7 +20,8 @@ The design of this language is based off of the [Crafting Interpreters](https://
 To get started, naviagte to the dir within your system where the downloaded files are stored in Terminal or Command Prompt. Enter ```./redact.sh``` for the Interactive Interpreter for Redaction. Enter ```./redact.sh <file name>```to run the interpreter for the result given by the input file.
 
 ### Syntax 
-To be updated
+In Documentations folder under the file "Syntax.md" 
+ 
  
  
  
