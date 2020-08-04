@@ -1,0 +1,20 @@
+This page will document the specific motivations and language features that Redaction wil jope to have.
+
+Languages to be borrowed from:
+Java, Python 2/3, Kotlin, nim..
+
+- simple and easy to learn
+	- a new programmer should be able to know all the syntax within an hour of use
+	- english-like for-loops (for example)
+		- "loop from 0 to last element"
+
+- static typing and type safety (borrowing from Java and Kotlin)
+	- should try to prevent null pointer exceptions
+	- should stay away from python's type inference
+
+- (probably a lot later) borrow OOP from nim/kotlin
+	- 'data class' format from kotlin is nice etc
+- stay away from python's dependency on tabs, everything should probably be able to mesh onto one line
+- would be cool to incorporate functional programming inspired from python/haskell 
+
+
