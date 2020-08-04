@@ -1,9 +1,9 @@
 # Syntax
 
-Variable Declaration:
- ``` let a = 5;```
-```  let b = "Hello World";```
-  ```let c = true;```
+## Variable Declaration:
+ ``` let a = 5;```\
+```  let b = "Hello World";```\
+  ```let c = true;```\
  
   Variable Reassignment(not static):
  - a = 7;
