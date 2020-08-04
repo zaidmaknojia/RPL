@@ -3,7 +3,7 @@ A programming language (end goal is compiler/interpreter with documentation) bui
 
 The design of this language is based off of the [Crafting Interpreters](https://craftinginterpreters.com/) book by Bob Nystrom.
 
-### Language Features: \
+### Language Features: 
 -Tokens and lexing\
 -Abstract Syntax Trees\
 -Recursive Descent Parsing\
