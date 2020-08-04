@@ -1,0 +1,99 @@
+Syntax for Redaction
+	- Forgo the use of tabs and spaces
+	- Forgo the use of semicolons
+	- File extenstions for redaction are ".redact"
+	- Primitive types are boolean, char, and int (more to be supported)
+	- Non-primitive types are Strings, Array, etc. (to be supported)
+	- Files start with {begin} and end with {end}, feature from fortran
+
+a) Class Declaration
+	- Keyword "class" reserved 
+	- Keyword "private" reserved 
+	- file name == main class name
+    	- Example
+		EX)  class test           // main class declaration
+		EX1) private class test 1 // private class declaration
+
+b) Statement Declarations
+	- Use of "." (dot) operaters still present
+		- Example
+			EX) person.walk() // tells object "person" to walk();
+	- Use of passing varibles into methods
+		- Example
+			EX) sort(list) // takes in a list and mutates it into a sorted ascending list
+
+c) Variable and Constant Delcations
+	- Keyword "let" reserved for variables
+	- Keyword "const" reserved for constants
+	- To print variables/constants, "$" must precede name for valid value output
+	- Keyword "type" reserved for declaring types
+	- Example
+		EX) let a = 5 type int //declares and initializes variable "a" as an int and assigns a value of 5
+		EX) const b = "hello" type String //declares and intiailzes constant "b" as a String and assigns a value of "hello"
+		EX) \p $a  $b //prints "5 hello"
+		EX) printf() //to be implemented
+		
+d) Method Declarations
+	- Keyword "func" reserved
+	- "()" used to denote method
+	- "(xxxxx)" ability to pass variables into methods as instance variables
+	- No distinction between return and void methods
+	- "void" methods will always return 0
+	- "return" methods will return the desired value or object
+	- Example
+		- func method1 () { return 0 } // declares method called "method1" that is void, but will return "0" regardless.
+
+e) print handling
+	- Keyword "printf" reserved
+	- Keyword "\p" reserved
+	- Final structure to be decided
+
+f) comment declaration
+	- Feature from Java
+	- "//" for single-line comments
+	- "/* ... */" for multi-line comments 
+
+g) Loops 
+	- Keyword "loop" reserved
+	- Keyword "while" reserved
+	- Keyword "switch" reserved
+	- Example
+		EX) loop i from 1 to 9 {
+			\p("$i")
+		    } //output : 123456789
+		
+		EX1) let i = 1 type int	
+		     while i < 10 {
+		     	\p("$i")
+			i++
+		     } //output : 123456789
+		
+		EX2) switch case loop is taken from Java with syntactic modifications
+		
+h) Conditional Statements
+	- Keyword "and" reserved
+	- Keyword "or" reserved
+	- Keyword "!" reserved
+	- Keywords "<","<=",">=",">","==" reserved
+	- Keyword "true" reserved
+	- Keyword "false" reserved
+	- Keywords "if","elif", and "else" reserved 
+	- Example
+		EX) if a <= 5 and !c == false or b == "Hello World" {
+		    	return true
+		    }
+		    elif a > 5 {
+		    	return false
+		    }
+		    else {
+		    	return true
+		    }
+
+i) Type inferencing
+	- type inferencing and casting system will be borrowed from Java
+	- Python's syntax for casting will be followed
+	- Example
+		EX) let a = 5.0 type double
+		    let b = int(a) type int //throws loss of precision error
+	            let b = 5 type int
+	            let c = char(b) type char //good

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Syntax | The Redaction Programming Language</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.37aec00c.css" as="style"><link rel="preload" href="/assets/js/app.0ed5a1d6.js" as="script"><link rel="preload" href="/assets/js/2.189aed44.js" as="script"><link rel="preload" href="/assets/js/10.57a2240a.js" as="script"><link rel="prefetch" href="/assets/js/3.e65f3124.js"><link rel="prefetch" href="/assets/js/4.e46f57ef.js"><link rel="prefetch" href="/assets/js/5.130ef657.js"><link rel="prefetch" href="/assets/js/6.35da1540.js"><link rel="prefetch" href="/assets/js/7.d8c30f26.js"><link rel="prefetch" href="/assets/js/8.681d5b89.js"><link rel="prefetch" href="/assets/js/9.791c7f6e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.37aec00c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">The Redaction Programming Language</span></a> <div class="links"><!----> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><a href="/Motivations.html" class="sidebar-link">Motivations</a></li><li><a href="/Language-Features.html" class="sidebar-link">Language Features</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Language-Features.html#tokens-and-lexing" class="sidebar-link">Tokens and lexing</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#abstract-syntax-trees-ast" class="sidebar-link">Abstract Syntax Trees (AST)</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#recursive-descent-parsing" class="sidebar-link">Recursive Descent Parsing</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#prefix-and-infix-expressions" class="sidebar-link">Prefix and Infix Expressions</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#interpreting-code-using-the-visitor-pattern" class="sidebar-link">Interpreting Code Using the Visitor Pattern</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#lexical-scope" class="sidebar-link">Lexical Scope</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#environment-chains-for-storing-variables" class="sidebar-link">Environment Chains for Storing Variables</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#control-flow" class="sidebar-link">Control Flow</a></li><li class="sidebar-sub-header"><a href="/Language-Features.html#functions-with-parameters" class="sidebar-link">Functions with Parameters</a></li></ul></li><li><a href="/Syntax.html" aria-current="page" class="active sidebar-link">Syntax</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Syntax.html#variable-declaration-and-reassignment" class="sidebar-link">Variable Declaration and Reassignment</a></li><li class="sidebar-sub-header"><a href="/Syntax.html#variable-scoping" class="sidebar-link">Variable Scoping</a></li><li class="sidebar-sub-header"><a href="/Syntax.html#print-statements" class="sidebar-link">Print Statements</a></li><li class="sidebar-sub-header"><a href="/Syntax.html#conditional-statements" class="sidebar-link">Conditional Statements</a></li><li class="sidebar-sub-header"><a href="/Syntax.html#loop-declarations" class="sidebar-link">Loop Declarations</a></li><li class="sidebar-sub-header"><a href="/Syntax.html#function-declaration" class="sidebar-link">Function Declaration</a></li></ul></li><li><a href="/Installation-and-Usage.html" class="sidebar-link">Installation and Usage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Installation-and-Usage.html#system-prerequisites" class="sidebar-link">System Prerequisites</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Installation-and-Usage.html#windows" class="sidebar-link">Windows</a></li><li class="sidebar-sub-header"><a href="/Installation-and-Usage.html#macos-or-linux-distributions" class="sidebar-link">MacOS or Linux Distributions</a></li></ul></li><li class="sidebar-sub-header"><a href="/Installation-and-Usage.html#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/Installation-and-Usage.html#usage" class="sidebar-link">Usage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Installation-and-Usage.html#windows-2" class="sidebar-link">Windows</a></li><li class="sidebar-sub-header"><a href="/Installation-and-Usage.html#macos-linux-distributions" class="sidebar-link">MacOS / Linux Distributions</a></li></ul></li></ul></li><li><a href="/About-Us.html" class="sidebar-link">About Us</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/About-Us.html#zaid-maknojia" class="sidebar-link">Zaid Maknojia</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/About-Us.html#contact-zaid" class="sidebar-link">Contact Zaid</a></li></ul></li><li class="sidebar-sub-header"><a href="/About-Us.html#harish-bommakanti" class="sidebar-link">Harish Bommakanti</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/About-Us.html#contact-harish" class="sidebar-link">Contact Harish</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="syntax"><a href="#syntax" class="header-anchor"></a> Syntax</h1> <h2 id="variable-declaration-and-reassignment"><a href="#variable-declaration-and-reassignment" class="header-anchor"></a> Variable Declaration and Reassignment</h2> <ul><li>Variable assignment and reassignment mimic python and javascript with its loose typing</li></ul> <div class="language-redaction extra-class"><pre class="language-text"><code>let a = 5;
+let b = &quot;Hello World&quot;;
+let c = true;
+
+a = 7;
+b = 4;
+c = &quot;Bye&quot;;
+</code></pre></div><h2 id="variable-scoping"><a href="#variable-scoping" class="header-anchor"></a> Variable Scoping</h2> <ul><li>Scoping works likes most languages, capable of supporting complicated nested structures.</li></ul> <div class="language-redaction extra-class"><pre class="language-text"><code>let a = &quot;global a&quot;;
+let b = &quot;global b&quot;;
+let c = &quot;global c&quot;;
+{
+  let a = &quot;outer a&quot;;
+  let b = &quot;outer b&quot;;
+  {
+    let a = &quot;inner a&quot;;
+    print a; //inner a
+    print b; //outer b
+    print c; //global c
+  }
+  print a; //outer a
+  print b; //outer b
+  print c; //global c
+}
+print a; //global a
+print b; //global b
+print c; //global c
+</code></pre></div><h2 id="print-statements"><a href="#print-statements" class="header-anchor"></a> Print Statements</h2> <ul><li>Follows either Python 2 or Python 3 print statement style.</li></ul> <div class="language-redaction extra-class"><pre class="language-text"><code>print a;
+//OR
+print(a);
+</code></pre></div><h2 id="conditional-statements"><a href="#conditional-statements" class="header-anchor"></a> Conditional Statements</h2> <ul><li><code>and</code> and <code>or</code> statements inspired by Python.</li> <li>Uses 'truthy' logic shared by most languages, but tried to avoid Javascript's truthy logic (<a href="https://i.redd.it/4skcofasa1p01.png" target="_blank" rel="noopener noreferrer">see why<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>).</li></ul> <div class="language-redaction extra-class"><pre class="language-text"><code>print &quot;hi&quot; or 2; // &quot;hi&quot;
+print null or &quot;yes&quot;; // &quot;yes&quot;
+
+let a = 4;
+if(a == 2) {
+  print(&quot;a is equal to 2&quot;);
+} else {
+  print(&quot;a is not equal to 2&quot;);
+}
+//prints &quot;a is not equal to 2&quot;
+</code></pre></div><h2 id="loop-declarations"><a href="#loop-declarations" class="header-anchor"></a> Loop Declarations</h2> <ul><li>The <code>loop</code> (analog to the for loop) and <code>while</code> loops have the exact same syntax as most C based languages.</li></ul> <div class="language-redaction extra-class"><pre class="language-text"><code>//&quot;For loop&quot;
+loop (let i = 0; i &lt; 10; i = i + 1) {
+       print i;
+   }
+   //Outputs 0,1,2,3,4,5,6,7,8,9 on new lines
+
+//&quot;While Loop&quot;
+let a = 0;
+let b = 1;
+
+while (a &lt; 10000) {
+  print a;
+  let temp = a;
+  a = b;
+  b = temp + b;
+}
+//Outputs first 21 numbers in the Fibonacci Sequence
+</code></pre></div><h2 id="function-declaration"><a href="#function-declaration" class="header-anchor"></a> Function Declaration</h2> <ul><li>Uses keyword <code>func</code> to declare a new function.</li> <li>Supports nested function and some functional programming concepts shared by Python.</li></ul> <div class="language-redaction extra-class"><pre class="language-text"><code>func fib(n) {
+  if (n &lt;= 1) 
+     return n;
+  return fib(n - 2) + fib(n - 1);
+}
+
+func makeCounter() {
+  let i = 0;
+  func count() {
+    i = i + 1;
+    print i;
+  }
+
+  return count;
+}
+
+let counter = makeCounter();
+counter(); // &quot;1&quot;
+counter(); // &quot;2&quot;
+</code></pre></div><p><br><br><br></p> <p><strong>Created by Zaid Maknojia and Harish Bommakanti</strong></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Language-Features.html" class="prev">
+        Language Features
+      </a></span> <span class="next"><a href="/Installation-and-Usage.html">
+        Installation and Usage
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0ed5a1d6.js" defer></script><script src="/assets/js/2.189aed44.js" defer></script><script src="/assets/js/10.57a2240a.js" defer></script>
+  </body>
+</html>

@@ -48,6 +48,12 @@ public class Redaction_Main {
     }
 
     public static void runFile(String path) {
+        if (!path.endsWith(".redact"))
+        {
+            System.out.printf("\'%s\' is not a redaction file. Make sure the filepath ends with \'.redact\'.\n",path);
+            System.out.println("Program Terminated.");
+            System.exit(0);
+        }
         System.out.printf("\nOutput for \'%s\':\n\n",path);
         byte[] bytes = null;
         try {
