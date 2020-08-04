@@ -38,5 +38,33 @@ print c; //global c
  OR
 ``` print(a);```
  
+## Conditional Statements:
+```
+print "hi" or 2; // "hi"
+print null or "yes"; // "yes"
+```
+
+## Loop Declarations:
+
+#### "For loop"
+```loop (let i = 0; i < 10; i = i + 1) {
+       print i;
+   }
+   //Outputs 0,1,2,3,4,5,6,7,8,9 on new lines
+```
+
+#### "While loop"
+```
+let a = 0;
+let b = 1;
+
+while (a < 10000) {
+  print a;
+  let temp = a;
+  a = b;
+  b = temp + b;
+}
+//Outputs first 21 numbers in the Fibonacci Sequence
+```
 
 
