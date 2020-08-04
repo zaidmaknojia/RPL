@@ -1,7 +1,10 @@
-# Redaction-Programming-Language
+# Redaction Programming Language
 A programming language (end goal is compiler/interpreter with documentation) built using desirable features from commonly used languages, such as Java, Python, and Kotlin. Written in Java.
 
 The design of this language is based off of the [Crafting Interpreters](https://craftinginterpreters.com/) book by Bob Nystrom.
+
+## Check Out Our Website!
+[Redaction Programming Language](https://redactionpl.netlify.app/) by Harish Bommakanti and Zaid Maknojia
 
 ### Language Features: 
 -Tokens and lexing\
