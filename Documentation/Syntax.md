@@ -56,7 +56,9 @@ if(a == 2) {
 ## Loop Declarations:
 
 #### "For loop"
-```loop (let i = 0; i < 10; i = i + 1) {
+
+```
+loop (let i = 0; i < 10; i = i + 1) {
        print i;
    }
    //Outputs 0,1,2,3,4,5,6,7,8,9 on new lines
