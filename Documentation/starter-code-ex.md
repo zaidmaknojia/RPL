@@ -3,38 +3,40 @@
 ## Variable Declaration:
  ``` let a = 5;```\
 ```  let b = "Hello World";```\
-  ```let c = true;```\
+  ```let c = true;```
  
-  Variable Reassignment(not static):
- - a = 7;
- - b = 4;
- - c = "Bye";
+## Variable Reassignment(not static):
+ ``` a = 7; ```\
+ ``` b = 4; ```\
+ ``` c = "Bye";```
  
- Variable Scoping:
+## Variable Scoping:
+``` 
 let a = "global a";
-var b = "global b";
-var c = "global c";
+let b = "global b";
+let c = "global c";
 {
-  var a = "outer a";
-  var b = "outer b";
+  let a = "outer a";
+  let b = "outer b";
   {
-    var a = "inner a";
-    print a;
-    print b;
-    print c;
+    let a = "inner a";
+    print a; //inner a
+    print b; //outer b
+    print c; //global c
   }
-  print a;
-  print b;
-  print c;
+  print a; //outer a
+  print b; //outer b
+  print c; //global c
 }
-print a;
-print b;
-print c;
+print a; //global a
+print b; //global b
+print c; //global c
+```
  
- Print Statements:
- - print a;
+## Print Statements:
+ ``` print a;```
  OR
- - print(a);
+``` print(a);```
  
 
 
