@@ -43,6 +43,15 @@ print c; //global c
 print "hi" or 2; // "hi"
 print null or "yes"; // "yes"
 ```
+```
+let a = 4;
+if(a == 2) {
+  print("a is equal to 2");
+} else {
+  print("a is not equal to 2");
+}
+//prints "a is not equal to 2"
+```
 
 ## Loop Declarations:
 
@@ -67,4 +76,26 @@ while (a < 10000) {
 //Outputs first 21 numbers in the Fibonacci Sequence
 ```
 
+## Function Declaration
+```
+func fib(n) {
+  if (n <= 1) 
+     return n;
+  return fib(n - 2) + fib(n - 1);
+}
+```
+```
+func makeCounter() {
+  let i = 0;
+  func count() {
+    i = i + 1;
+    print i;
+  }
 
+  return count;
+}
+
+let counter = makeCounter();
+counter(); // "1"
+counter(); // "2"
+```
